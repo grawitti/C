@@ -1,3 +1,9 @@
+/*
+ * Author: Grawitti
+ * Date: 20.11.2018
+ * Caesar chiper v. 0.2
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 
