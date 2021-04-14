@@ -1,11 +1,9 @@
 CCX = gcc
 CFLAGS = -O0 -g -w -Wall
-FLTK_FLAGS = #`fltk-config --ldflags --use-images`
-SOURCE = main
-DEPENDENCES = #../../GUI/Graph.cpp ../../GUI/Window.cpp  ../../GUI/GUI.cpp ../../GUI/Func_window.cpp
+SOURCE = caesar_encrypt
 
 $(SOURCE):
-	$(CCX)	$(CFLAGS)	-o $(SOURCE)	$(DEPENDENCES)	$(SOURCE).c	$(FLTK_FLAGS)	
+	$(CCX) $(CFLAGS) -o $(SOURCE) $(SOURCE).c	
 
 clean:
-	rm -r $(SOURCE) $(SOURCE).dSYM
+	rm -r $(SOURCE)
